@@ -3,3 +3,8 @@
 ################################################################################
 
 /NLTK.xUnitTests/bin/Debug/netcoreapp3.1
+/NLTK.xUnitTests/obj
+/NLTK.Testing/obj
+/NLTK.Testing/bin/Debug/netcoreapp3.1
+/nltk/bin/Debug/netcoreapp3.1
+/nltk/obj
