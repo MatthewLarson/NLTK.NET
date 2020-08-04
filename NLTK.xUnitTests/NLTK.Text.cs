@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Reflection.Metadata.Ecma335;
 using Xunit;
 
@@ -23,6 +24,24 @@ namespace NLTK.Text.Tests
                 Assert.NotEqual(tokens, contextIndex.Tokens());
             }
             
+        }
+    }
+
+    public class TextTests
+    {
+        public Text text = new Text(new string[] { "matt", "anthony", "brad" });
+        
+        [Theory]
+        [InlineData(0, new string[] { "matt", "anthony" })]
+        [InlineData(1, new string[] { "anthony", "brad" })]
+        public void Text_RangeFunctionality(int i, string[] tokens)
+        {
+            List<string[]> tests = new List<string[]> { 
+                text[..2], 
+                text[1..]
+            };
+
+            Assert.Equal(tokens, tests[i]);
         }
     }
 }
