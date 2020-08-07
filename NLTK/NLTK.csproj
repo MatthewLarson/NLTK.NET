@@ -6,4 +6,27 @@
     <RootNamespace>NLTK</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="App\" />
+    <Folder Include="Chunk\" />
+    <Folder Include="Classify\" />
+    <Folder Include="Cluster\" />
+    <Folder Include="Corpus\" />
+    <Folder Include="Draw\" />
+    <Folder Include="Inference\" />
+    <Folder Include="LM\" />
+    <Folder Include="Metrics\" />
+    <Folder Include="Misc\" />
+    <Folder Include="Twitter\" />
+    <Folder Include="Translate\" />
+    <Folder Include="Tokenize\" />
+    <Folder Include="Test\" />
+    <Folder Include="TBL\" />
+    <Folder Include="Tag\" />
+    <Folder Include="Stem\" />
+    <Folder Include="Sentiment\" />
+    <Folder Include="SEM\" />
+    <Folder Include="Parse\" />
+  </ItemGroup>
+
 </Project>
